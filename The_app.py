@@ -4,6 +4,7 @@ import datetime
 import speech_recognition as sr
 import wikipedia
 import webbrowser
+import os
 
 
 engiene = pyttsx3.init('sapi5')
@@ -65,7 +66,11 @@ if __name__ == "__main__":
 				speak("opening google")
 
 				webbrowser.open("google.com")
-
+			elif 'who are you ' in query:
+				speak("i am Nooby bot to help you with your pc and i am your personal assistant")
+				query = query.replace("who are you", "")
+			elif 'how are you' in query:
+				speak("i am doing great sir")
 
 
 
