@@ -6,6 +6,10 @@ import wikipedia
 import webbrowser
 import os
 
+
+url = "www.google.com"
+
+
 engiene = pyttsx3.init('sapi5')
 voices = engiene.getProperty('voices')
 
@@ -41,8 +45,15 @@ def take_command():
 
 
 def speak(audio):
-    engiene.say(audio)
-    engiene.runAndWait()
+    try:
+     engiene.say(audio)
+     engiene.runAndWait()
+    except Exception as tortise:
+        print(tortise)
+
+
+
+
 
 
 
@@ -64,7 +75,8 @@ if __name__ == "__main__":
 
             speak("opening google")
 
-            webbrowser.open("google.com")
+
+            webbrowser.get(using='google-chrome').open(url)
         elif 'who are you' in query:
 
             speak("i am Nooby bot to help you with your pc and i am your personal assistant")
@@ -74,20 +86,59 @@ if __name__ == "__main__":
             speak("i am doing great sir")
 
         elif 'discord' in query:
-            speak("i m opening discord please wait for some time.....")
-            discord = "C:\\Users\\User\\AppData\\Local\\Discord\\app-0.0.306\\Discord.exe"
-            os.startfile(discord)
+            try:
+
+              speak("i m opening discord please wait for some time.....")
+              discord = "C:\\Users\\User\\AppData\\Local\\Discord\\app-0.0.306\\Discord.exe"
+              os.startfile(discord)
+            except Exception as error:
+                print(error)
+                speak(error)
         elif 'close app' in query:
-            os.system('TASKILL /F /IM discord.exe')
+            try:
+              os.system('TASKILL /F /IM Discord.exe')
+            except Exception as error:
+                print(error)
+                speak(error)
+
 
         elif 'time' in query:
+
             strtime = datetime.datetime.now().strftime("%H:%M")
             speak(strtime)
             print(strtime)
         elif 'exit' in query:
             speak("i am very happy to serve you")
             speak("you can call me anytime")
-            exit()
+
+        elif 'pycharm' in query:
+            try:
+              speak("opening pycharm please kindly wait for sometimes....")
+              pycharm = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin\\pycharm64.exe"
+              os.open(pycharm)
+            except Exception as error:
+                print(error)
+                speak(error)
+
+        elif 'close pycharm' in query:
+            try:
+              os.system('TASKILL /F /IM pycharm64.exe')
+            except Exception as error:
+                print(error)
+                speak(error)
+
+        elif 'close chrome' in query:
+            try:
+              os.system('TASKILL /F /IM chrome.exe')
+            except Exception as error:
+                print(error)
+                speak(error)
+
+        else:
+            speak("i dont understand what you commanded ")
+            speak("please make sure you read the instruction")
+
+
 
 
 
