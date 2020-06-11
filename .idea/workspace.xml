@@ -46,7 +46,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Virtual environment" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.The_app">
+  <component name="RunManager" selected="Python.ai_gui">
     <configuration name="The_app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Project_A.I" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,8 +89,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ai_gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project_A.I" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai_gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ai_gui" />
         <item itemvalue="Python.The_app_with_gui" />
       </list>
     </recent_temporary>
@@ -129,25 +151,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="139" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591682012255" />
-    <state width="1345" height="208" key="GridCell.Tab.0.bottom" timestamp="1591713576354">
+    <state width="1308" height="208" key="GridCell.Tab.0.bottom" timestamp="1591857534956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591713576354" />
-    <state width="1345" height="208" key="GridCell.Tab.0.center" timestamp="1591713576353">
+    <state width="1308" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591857534956" />
+    <state width="1308" height="208" key="GridCell.Tab.0.center" timestamp="1591857534955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591713576353" />
-    <state width="1345" height="208" key="GridCell.Tab.0.left" timestamp="1591713576353">
+    <state width="1308" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591857534955" />
+    <state width="1308" height="208" key="GridCell.Tab.0.left" timestamp="1591857534955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591713576353" />
-    <state width="1345" height="208" key="GridCell.Tab.0.right" timestamp="1591713576353">
+    <state width="1308" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591857534955" />
+    <state width="1308" height="208" key="GridCell.Tab.0.right" timestamp="1591857534956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591713576353" />
+    <state width="1308" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591857534956" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1591682025992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591682025992" />
+    <state x="506" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591855792429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="506" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1591855792429" />
   </component>
 </project>
