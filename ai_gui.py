@@ -12,15 +12,21 @@ root = tk.Tk()
 
 
 def input_command():
-
     if e.get() == "":
-        label.config(text="how are you sir??")
+   	  label.config(text="")
+    elif e.get() == "discord" or e.get() == "open discord":
+ 	   os.startfile(path)
+  	   label.config(text="opening discord")
+    elif e.get() == "close discord" or e.get() == "discord off":
+    	try:
+    	  os.system('TASKILL /F /IM discord.exe')
+    	  label.config(text="closing discord")
+    	except Exception as error:
+    		label.config(text=error)
 
-        question = True
-
-        while blank  in e.get() and question == True:
-          label.config(text="sir i have asked you a qusfsf")
-
+    elif e.get() == "time" or e.get() == "tell time":
+  	   strtime = datetime.datetime.now().strftime("%H:%M")
+  	   label.config(text=strtime)
 
 
 
@@ -40,8 +46,13 @@ def wishuser():
       label.config(text="good evening")
 
 
-e = tk.Entry()
 
+
+
+
+path = "C:\\Users\\User\\AppData\\Local\\Discord\\app-0.0.306\\Discord.exe"
+
+e = tk.Entry()
 e.pack()
 btn = tk.Button(text="ok", bg='black', fg='white', command=input_command)
 btn.pack()
@@ -49,9 +60,9 @@ btn.pack()
 label = tk.Label(fg='black', text="")
 label.pack()
 
-blank = ""
 
-question = False
+
+
 
 wishuser()
 root.title("Nooby bot")

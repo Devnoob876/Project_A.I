@@ -275,13 +275,23 @@ if __name__ == "__main__":
 
         elif 'are you married' in query:
 
-            speak(" I'm focusing on my career right now.")
+            speak("wait  you think a robot can marry ??")
+            speak("you are the dumbest person i have ever seen in my whole life")
 
 
         elif 'Clean My Room' in query:
 
             speak("If you can’t afford a robot vacuum, perhaps your Google Home can do a little cleaning for you?")
+            speak("go clean it yourself u lazy human")
 
         elif 'test' in query:
 
             speak("Are You Married?")
+
+            if 'no' in query:
+                speak("oh ok but why are you commanding test")
+            elif 'yes' in query:
+                speak("you didnt invited me")
+            elif 'why are you asking that' in query:
+                speak("then why are you commanding me test ??")
+                
