@@ -1,5 +1,5 @@
-# This a project that i made it the most work with ortspoon
+# This a simple voice assistant
 
-This code i practised python and i make it public because it may help many begieners
+This code was made public in order to help the beginners
 
 
