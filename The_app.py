@@ -81,7 +81,7 @@ if __name__ == "__main__":
             discord = "C:\\Users\\User\\AppData\\Local\\Discord\\app-0.0.306\\Discord.exe"
             os.startfile(discord)
         elif 'close app' in query:
-            os.system('TASKILL /F /IM discord.exe')
+            os.system('TASKKILL /F /IM discord.exe')
 
         elif 'time' in query:
             strtime = datetime.datetime.now().strftime("%H:%M")
@@ -294,4 +294,33 @@ if __name__ == "__main__":
                 speak("you didnt invited me")
             elif 'why are you asking that' in query:
                 speak("then why are you commanding me test ??")
+	
+
+#                  Fl1pNatic's
+
+#	           Changes
+	elif 'like tea' in query:#Do you like tea?
+
+		speak("I like what you prefer, sir")
+
+	elif 'cat' in query:
+
+		speak("question mark, question mark, question mark")
+
+	elif 'rock paper scizzors' in query:
+	
+		speak("1, 2, 3")
+		if 'rock' in query:
+			speak("Scizzors. Oh no, you won)
+		elif 'paper' in query:
+			speak("Rock. Oh no, you won)
+		elif 'scizzors' in query:
+			speak("Paper. Oh no, you won)
                 
+	elif 'wikipedia' in query:
+
+		speak("According to wikipedia Wikipedia (/ˌwɪkɪˈpiːdiə/ (About this soundlisten) wik-ih-PEE-dee-ə or /ˌwɪkiˈpiːdiə/ (About this soundlisten) wik-ee-PEE-dee-ə; abbreviated as WP) is a multilingual online encyclopedia created and maintained as an open collaboration project by a community of volunteer editors using a wiki-based editing system. It is the largest and most popular general reference work on the World Wide Web. It is also one of the 15 most popular websites as ranked by Alexa, as of August 2020. It features exclusively free content and has no advertising. It is hosted by the Wikimedia Foundation, an American non-profit organization funded primarily through donations.")
+
+	elif 'you live' in query:#Where do you live
+
+		speak("I was born in internet and I live in internet, as it's my home")
