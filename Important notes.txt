@@ -1,2 +1,3 @@
 hey ortspoon and fl1pnatic pls kindly install pyttsx3, speechrecognition, pyaudio and wikipedia and
 make sure ur interpreter is deafault python location and python version 3.7 or lower not upper...
+Guys to make this thing work u need to pip install chatterbot==1.0.4 if u got any error i am here to help

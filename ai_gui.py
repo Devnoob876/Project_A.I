@@ -4,7 +4,15 @@ import wikipedia
 import webbrowser
 import datetime
 import time
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
 
+bot = ChatBot('hi')
+trainer = ChatterBotCorpusTrainer(bot)
+
+trainer.train(
+    "chatterbot.corpus.english"
+)
 root = tk.Tk()
 
 
@@ -24,21 +32,10 @@ def input_command():
     elif e.get() == "time" or e.get() == "tell time":
         strtime = datetime.datetime.now().strftime("%H:%M")
         label.config(text=strtime)
-    elif e.get() == "how are you" or e.get() == "are you ok":
-        label.config(text="i am fine sir", fg='white', bg='black')
-        how = True
-        time.sleep(5)
-        if how == True:
-            label.config(text="how are you sir?", fg="yellow")
-        else:
-            label.config()
-
-
-
     else:
-        label.config(text="sir i dont understand what the heck are you trying me to do", fg='red', bg='yellow')
-
-
+        a = bot.get_response(e.get())
+        label.config(text=a, fg='white', bg='black')
+        
 def wishuser():
     hour = int(datetime.datetime.now().hour)
 
